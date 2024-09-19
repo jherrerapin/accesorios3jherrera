@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*Formulario Default*/
+.FormularioDiv {
+  margin-bottom: 5rem;
+}
+
+.FormDefault {
+  background-color: #021c46;
+  border-radius: 5px;
+  padding: 5rem 0rem;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 1px 7px 31px 5px white;
+}
+
+.Campo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+  flex-direction: column;
+}
+
+.Campo input {
+  width: 80%;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.Campo label {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.Acciones a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .FormDefault {
+    width: 50rem;
+  }
+
+  .Campo {
+    flex-direction: row;
+    margin: 1rem;
+  }
+
+  .Campo input {
+    width: 30rem;
+    margin: 0rem 3rem;
+  }
+}
+
+.Boton {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0rem 1rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-family: "Amatic Sc", cursive;
+}
+
+.Boton span{
+  color: white;
+
+}
+
+/* Header*/
+.Index {
+  background-image: url("/img/imagen-fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45rem;
+  background-position: 0px 0px;
+}
+
+.contenedorHeader {
+  display: flex;
+  flex-direction: column;
+  height: 32rem;
+  background-color: gray;
+}
+
+/*barra*/
+.barra {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.barraInicio {
+  background-color: rgba(0, 0, 0, 0.614);
+}
+
+.barra h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+.MenuNavegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.MenuNavegacion .menuLink {
+  color: white;
+  font-size: 2rem;
+}
+
+.liMenu {
+  padding: 0.5rem;
+}
+
+.Titulo {
+  font-size: 3rem;
+  text-decoration: uppercase;
+  margin: 4rem auto;
+  width: 90%;
+  color: white;
+  line-height: 3rem;
+}
+
+/*media queries*/
+@media only screen and (min-width: 1024px) {
+  .contenedorHeader {
+    justify-content: space-between;
+  }
+
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1, 5rem;
+  }
+  .barra h1 {
+    font-size: 4rem;
+  }
+
+  .MenuNavegacion {
+    flex-direction: row;
+  }
+  .MenuNavegacion a:hover {
+    color: black;
+    transition: color 0.5s;
+  }
+
+  .Titulo {
+    font-size: 5rem;
+    margin: 15rem 4rem;
+    width: 90%;
+    line-height: 5rem;
+  }
+}
+
+/* Seccion Gafas*/
+
+.gafas h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contenedorProductos {
+  background-color: #252323;
+  padding: 2rem;
+}
+
+.contenedorProductos h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: white;
+  border-bottom: 9px solid white;
+  border-radius: 1px;
+  padding-bottom: 1rem;
+}
+
+.contenedorProductos p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  color: white;
+}
+
+.Producto {
+  margin: 2rem 0rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .Producto:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+  .Producto {
+    transition: all 1s;
+  }
+}
+
+/*Seccion Galeria*/
+.ContenedorImagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1.5rem;
+  padding-bottom: 50px;
+}
+
+.ContenedorImagenes img {
+  width: 200px;
+  height: 200px;
+}
+@media only screen and (min-width: 1024px) {
+  .ContenedorImagenes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ImgGal {
+    transition: all 1s;
+  }
+
+  .ImgGal:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+  }
+}
+
+/* Contenedor Pantalla*/
+.ContenedorPantalla {
+  position: relative;
+  height: auto;
+}
+
+.parallax::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.ContenedorPantalla::before {
+  content: "";
+  background-image: url("/img/fondoparallax.webp");
+  background-attachment: fixed;
+}
+
+.backgroundPantalla {
+  background-color: rgba(0, 0, 0, 0.563);
+  position: relative;
+}
+.ContenedorTexto {
+  position: relative;
+  text-align: center;
+}
+.ContenedorTexto h2 {
+  font-size: 2rem;
+  line-height: 5rem;
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .ContenedorTexto h2 {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*Seccion Informacion*/
+.InformacionDiv {
+  background-color: #252323;
+  margin: 2rem 0rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Borde {
+  border: 1px solid white;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  width: 22.7rem;
+}
+
+.InformacionDiv p {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .Contenedor.ContInfoTienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .InformacionDiv {
+    margin: 1rem 0rem;
+  }
+}
+
+footer p {
+  text-align: center;
+}
